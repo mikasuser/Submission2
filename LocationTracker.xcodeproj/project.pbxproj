@@ -19,8 +19,8 @@
 		55F6FA2016ECBC420082F2D9 /* LocationTrackerMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F6FA1F16ECBC420082F2D9 /* LocationTrackerMainViewController.m */; };
 		55F6FA2316ECBC420082F2D9 /* LocationTrackerFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F6FA2216ECBC420082F2D9 /* LocationTrackerFlipsideViewController.m */; };
 		55F6FA2616ECBC420082F2D9 /* LocationTrackerMainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F6FA2416ECBC420082F2D9 /* LocationTrackerMainViewController_iPhone.xib */; };
-		55F6FA2916ECBC420082F2D9 /* LocationTrackerMainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F6FA2716ECBC420082F2D9 /* LocationTrackerMainViewController_iPad.xib */; };
 		55F6FA2C16ECBC420082F2D9 /* LocationTrackerFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F6FA2A16ECBC420082F2D9 /* LocationTrackerFlipsideViewController.xib */; };
+		55F6FA3A16ED31F60082F2D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F6FA3916ED31F60082F2D9 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +42,8 @@
 		55F6FA2116ECBC420082F2D9 /* LocationTrackerFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationTrackerFlipsideViewController.h; sourceTree = "<group>"; };
 		55F6FA2216ECBC420082F2D9 /* LocationTrackerFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationTrackerFlipsideViewController.m; sourceTree = "<group>"; };
 		55F6FA2516ECBC420082F2D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LocationTrackerMainViewController_iPhone.xib; sourceTree = "<group>"; };
-		55F6FA2816ECBC420082F2D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LocationTrackerMainViewController_iPad.xib; sourceTree = "<group>"; };
 		55F6FA2B16ECBC420082F2D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LocationTrackerFlipsideViewController.xib; sourceTree = "<group>"; };
+		55F6FA3916ED31F60082F2D9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F6FA3A16ED31F60082F2D9 /* CoreLocation.framework in Frameworks */,
 				55F6FA0716ECBC420082F2D9 /* UIKit.framework in Frameworks */,
 				55F6FA0916ECBC420082F2D9 /* Foundation.framework in Frameworks */,
 				55F6FA0B16ECBC420082F2D9 /* CoreGraphics.framework in Frameworks */,
@@ -63,6 +64,7 @@
 		55F6F9F716ECBC410082F2D9 = {
 			isa = PBXGroup;
 			children = (
+				55F6FA3916ED31F60082F2D9 /* CoreLocation.framework */,
 				55F6FA0C16ECBC420082F2D9 /* LocationTracker */,
 				55F6FA0516ECBC420082F2D9 /* Frameworks */,
 				55F6FA0316ECBC410082F2D9 /* Products */,
@@ -90,14 +92,13 @@
 		55F6FA0C16ECBC420082F2D9 /* LocationTracker */ = {
 			isa = PBXGroup;
 			children = (
-				55F6FA1516ECBC420082F2D9 /* LocationTrackerAppDelegate.h */,
-				55F6FA1616ECBC420082F2D9 /* LocationTrackerAppDelegate.m */,
 				55F6FA1E16ECBC420082F2D9 /* LocationTrackerMainViewController.h */,
 				55F6FA1F16ECBC420082F2D9 /* LocationTrackerMainViewController.m */,
+				55F6FA1516ECBC420082F2D9 /* LocationTrackerAppDelegate.h */,
+				55F6FA1616ECBC420082F2D9 /* LocationTrackerAppDelegate.m */,
 				55F6FA2116ECBC420082F2D9 /* LocationTrackerFlipsideViewController.h */,
 				55F6FA2216ECBC420082F2D9 /* LocationTrackerFlipsideViewController.m */,
 				55F6FA2416ECBC420082F2D9 /* LocationTrackerMainViewController_iPhone.xib */,
-				55F6FA2716ECBC420082F2D9 /* LocationTrackerMainViewController_iPad.xib */,
 				55F6FA2A16ECBC420082F2D9 /* LocationTrackerFlipsideViewController.xib */,
 				55F6FA0D16ECBC420082F2D9 /* Supporting Files */,
 			);
@@ -175,7 +176,6 @@
 				55F6FA1B16ECBC420082F2D9 /* Default@2x.png in Resources */,
 				55F6FA1D16ECBC420082F2D9 /* Default-568h@2x.png in Resources */,
 				55F6FA2616ECBC420082F2D9 /* LocationTrackerMainViewController_iPhone.xib in Resources */,
-				55F6FA2916ECBC420082F2D9 /* LocationTrackerMainViewController_iPad.xib in Resources */,
 				55F6FA2C16ECBC420082F2D9 /* LocationTrackerFlipsideViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,14 +211,6 @@
 				55F6FA2516ECBC420082F2D9 /* en */,
 			);
 			name = LocationTrackerMainViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		55F6FA2716ECBC420082F2D9 /* LocationTrackerMainViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55F6FA2816ECBC420082F2D9 /* en */,
-			);
-			name = LocationTrackerMainViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 		55F6FA2A16ECBC420082F2D9 /* LocationTrackerFlipsideViewController.xib */ = {
@@ -291,6 +283,7 @@
 				GCC_PREFIX_HEADER = "LocationTracker/LocationTracker-Prefix.pch";
 				INFOPLIST_FILE = "LocationTracker/LocationTracker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -302,6 +295,7 @@
 				GCC_PREFIX_HEADER = "LocationTracker/LocationTracker-Prefix.pch";
 				INFOPLIST_FILE = "LocationTracker/LocationTracker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

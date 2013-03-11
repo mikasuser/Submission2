@@ -15,6 +15,8 @@
 @end
 
 @interface LocationTrackerFlipsideViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *UIDistance;
+- (IBAction)UIDistSlider:(UISlider *)sender;
 
 @property (weak, nonatomic) id <LocationTrackerFlipsideViewControllerDelegate> delegate;
 

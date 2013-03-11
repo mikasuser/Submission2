@@ -7,7 +7,6 @@
 //
 
 #import "LocationTrackerAppDelegate.h"
-
 #import "LocationTrackerMainViewController.h"
 
 @implementation LocationTrackerAppDelegate
@@ -25,6 +24,9 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

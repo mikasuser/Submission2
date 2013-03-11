@@ -42,4 +42,6 @@
     [self.delegate flipsideViewControllerDidFinish:self];
 }
 
+- (IBAction)UIDistSlider:(UISlider *)sender {
+}
 @end
